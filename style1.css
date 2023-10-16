@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #FF9966,#FF5E62 );
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#navbar ul li{
+    margin: 5px;
+    padding: 5px;
+    list-style: none;
+}
+/* #734b6d,#42275a */
+#navbar ul{
+    display: flex;
+    
+}
+#navbar ul li a{
+    margin: 5px;
+    padding: 3px 10px;
+    border-radius: 15px;
+    color: #ffffff;
+    font-size: 25px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    background-color: white;
+    color: black;
+    /* transform: translate(-10px,-10px); */
+    transition: all 0.4s;
+}
+
+.container1{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 50%;
+    position: absolute;
+    padding: 80px 0;
+    justify-content: center;
+    margin-left: 20px;
+}
+.container3{
+    text-align: center;
+    color: rgb(237, 251, 145);
+}
+.bnknm{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 88px;
+    margin: auto;
+    left: 6rem;
+}
+.container{
+    display: flex;
+    margin: auto;
+}
+
+.conbtn{
+   /* padding-bottom: 20px; */
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: black;
+    width: 200px;
+    height: 70px;
+    align-items: center;
+    margin: 12px;
+}
+.conank{
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+.container h1{
+    padding-top: 25px;
+}
+/*------------- Table Styling ---------------*/
+.tb1{
+    width: 90%;
+    height: 90%;
+    margin: auto;
+    margin-top: 50px;
+    border-collapse: collapse;
+    border-radius: 5px;
+    box-shadow: 5px 5px 18px black;
+}
+.tb1 tr th{
+    font-size: 25px;
+    background-color: #3a035a;
+    color: #ffffff;
+    padding: 12px 15px;
+    
+}
+.tb1 tr td{
+    text-align: center;
+    font-size: 20px;
+    padding: 6px 7.5px;
+}
+.tb1 tr{
+    border-bottom: 1px solid #dddddd;
+}
+.tb1 tr:nth-of-type(even){
+    background-color: blanchedalmond;
+
+}
+.tb1 tr:nth-of-type(odd){
+    background-color: rgba(214, 212, 212, 0.936);
+}
+
+.contcre{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+.contcre input{
+    display: flex;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    color: white;
+    background-color: black;
+    font-size:20px ;
+}
+.creform{
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    width: 90%;
+    position: fixed;
+    top: 1vh;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    align-items:center ;
+    justify-content: center;
+}
+.btn{
+    position: relative;
+    margin: auto;
+    margin: 10px;
+    font-size: 18px;
+    padding: 5px;
+    border: 2px double black;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    
+}
+.btn:hover{
+    color: black;
+    background-color: white;
+}
+.formcont{
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    height: 500px;
+    margin: auto;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border: 2px solid red;
+}
+.formcont span{
+    position: relative;
+    font-size: 25px;
+    color: white;
+    left: -8em;
+}
+#submit{
+    width: 200px;
+}
+.formcont div select{
+    padding: 10px;
+    margin: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+    position: relative;
+    left: -4rem;
+    padding-right: 120px;
+}
+.formcont div{
+    margin:0 auto;
+    font-size: 20px;
+}
+.formcont div input{
+    font-size: 18px;
+    border-radius: 10px;
+    padding: 5px;
+}
+/* Images */
+.imgfront{
+    width: 677px;
+    height: 725px;
+    position: right;
+    display: flex;
+    float: right;
+    margin: 30px;
+} 
+/* Responsive */
+
+.para{
+    position: absolute;
+    top: 28vh;
+    font-size: 25px;
+}
+
+@media (max-width: 950px) {
+    .container2{
+        display: none;
+    }
+    .container1{
+        width: 100vw;
+        margin: auto;
+    }
+    
+}
+@media (max-width: 400px){
+    .container{
+        flex-direction: column;
+        height: 23%;
+        width: 90%;
+    }
+}
